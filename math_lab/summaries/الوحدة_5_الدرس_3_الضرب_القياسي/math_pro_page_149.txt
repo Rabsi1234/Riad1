@@ -1,0 +1,103 @@
+الوحدة 5: Lesson 3 - الضرب القياسي
+
+ 1. القواعد الرياضية بـ LaTeX
+
+الضرب القياسي هو عملية رياضية تستخدم في الفضاء ثلاثي الأبعاد، وتعرف بأنها عملية ضرب بين متجهين، وتعطي نتيجة متجهة. يمكن تمثيلها بالشكل التالي:
+
+$$
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+a_1  a_2  a_3 \\
+b_1  b_2  b_3 \\
+\end{vmatrix}
+$$
+
+حيث $\mathbf{a} = (a_1, a_2, a_3)$ و $\mathbf{b} = (b_1, b_2, b_3)$.
+
+ 2. حل الأمثلة
+
+ مثال 1:
+إذا كان $\mathbf{a} = (2, 3, 4)$ و $\mathbf{b} = (1, 2, 3)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+2  3  4 \\
+1  2  3 \\
+\end{vmatrix} \\
+= \mathbf{i}(9-8) - \mathbf{j}(6-4) + \mathbf{k}(4-3) \\
+= \mathbf{i}(1) - \mathbf{j}(2) + \mathbf{k}(1) \\
+= (1, -2, 1)
+\end{align*}
+$$
+
+لماذا فعلنا ذلك؟ لأننا استخدمنا قاعدة الضرب القياسي، حيث قمنا بحساب المحددات وطبقنا القواعد الحسابية.
+
+ 3. خطوات الحل
+
+1. **تحديد المتجهات**: حدد المتجهين $\mathbf{a}$ و $\mathbf{b}$.
+2. **تطبيق قاعدة الضرب القياسي**: استخدم قاعدة الضرب القياسي لحساب نتيجة الضرب.
+3. **حساب المحددات**: حساب المحددات باستخدام قاعدة ساروس.
+
+ 4. أسئلة قدرات عليا (نمط وزاري)
+
+ سؤال 1:
+إذا كان $\mathbf{a} = (2, 3, 4)$ و $\mathbf{b} = (1, 2, 3)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+2  3  4 \\
+1  2  3 \\
+\end{vmatrix} \\
+= \mathbf{i}(9-8) - \mathbf{j}(6-4) + \mathbf{k}(4-3) \\
+= \mathbf{i}(1) - \mathbf{j}(2) + \mathbf{k}(1) \\
+= (1, -2, 1)
+\end{align*}
+$$
+
+ سؤال 2:
+إذا كان $\mathbf{a} = (3, 4, 5)$ و $\mathbf{b} = (2, 3, 4)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+3  4  5 \\
+2  3  4 \\
+\end{vmatrix} \\
+= \mathbf{i}(16-15) - \mathbf{j}(12-10) + \mathbf{k}(9-8) \\
+= \mathbf{i}(1) - \mathbf{j}(2) + \mathbf{k}(1) \\
+= (1, -2, 1)
+\end{align*}
+$$
+
+ سؤال 3:
+إذا كان $\mathbf{a} = (4, 5, 6)$ و $\mathbf{b} = (3, 4, 5)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+4  5  6 \\
+3  4  5 \\
+\end{vmatrix} \\
+= \mathbf{i}(25-24) - \mathbf{j}(20-18) + \mathbf{k}(16-15) \\
+= \mathbf{i}(1) - \mathbf{j}(2) + \mathbf{k}(1) \\
+= (1, -2, 1)
+\end{align*}
+$$
+
+ 5. نصيحة ذهبية
+
+*   تأكد من أنك تفهم قاعدة الضرب القياسي جيدًا قبل تطبيقها.
+*   قم بتحديد المتجهات بشكل صحيح قبل تطبيق قاعدة الضرب القياسي.
+*   قم بحساب المحددات بشكل دقيق لضمان النتيجة الصحيحة.
+
+تذكر أن الضرب القياسي هو عملية رياضية مهمة في الفضاء ثلاثي الأبعاد، وتطبيقها بشكل صحيح يحتاج إلى فهم جيد لقاعدة الضرب القياسي وتنفيذها بدقة.

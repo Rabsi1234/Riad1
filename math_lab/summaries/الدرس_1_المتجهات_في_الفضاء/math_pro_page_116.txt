@@ -1,0 +1,89 @@
+أنا هنا لشرح الصفحة 116 من درس المتجهات في الفضاء لمنهاج التوجيهي العلمي الأردني (جيل 2006/2007) بشكل دقيق ومفصل.
+
+ 1. القوانين بـ LaTeX معقد واحترافي
+
+ القاعدة الأولى: قاعدة التوزيع
+
+$$
+\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}
+$$
+
+ القاعدة الثانية: قاعدة التكامل
+
+$$
+\int_{a}^{b} \vec{f}(t) \, dt = \vec{F}(b) - \vec{F}(a)
+$$
+
+حيث $\vec{F}(t)$ هي الدالة المتجهة التي تمثل التكامل غير المحدد ل $\vec{f}(t)$.
+
+ القاعدة الثالثة: قاعدة التوزيع للنقاط
+
+$$
+(\vec{a} + \vec{b}) \cdot \vec{c} = \vec{a} \cdot \vec{c} + \vec{b} \cdot \vec{c}
+$$
+
+ 2. حل الأمثلة الحقيقية بخطوات رياضية كاملة
+
+ مثال 1: إثبات أن $\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}$
+
+$$
+\begin{aligned}
+\vec{a} \times (\vec{b} \times \vec{c}) = \vec{a} \times \left( (\vec{b} \cdot \vec{c})\vec{i} - (\vec{b} \cdot \vec{i})\vec{c} \right) \\
+= (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}
+\end{aligned}
+$$
+
+ مثال 2: إثبات أن $\vec{a} \cdot (\vec{b} \times \vec{c}) = \vec{b} \cdot (\vec{c} \times \vec{a})$
+
+$$
+\begin{aligned}
+\vec{a} \cdot (\vec{b} \times \vec{c}) = \vec{a} \cdot \left( (\vec{b} \cdot \vec{c})\vec{i} - (\vec{b} \cdot \vec{i})\vec{c} \right) \\
+= (\vec{a} \cdot \vec{b})(\vec{c} \cdot \vec{i}) - (\vec{a} \cdot \vec{i})(\vec{b} \cdot \vec{c}) \\
+= \vec{b} \cdot (\vec{c} \times \vec{a})
+\end{aligned}
+$$
+
+ 3. إضافة 3 أسئلة قدرات عليا بمستوى وزاري متميز
+
+ سؤال 1: إذا كان $\vec{a} = 2\vec{i} + 3\vec{j} - \vec{k}$ و $\vec{b} = \vec{i} - 2\vec{j} + 3\vec{k}$، احسب $\vec{a} \times \vec{b}$.
+
+ سؤال 2: إذا كان $\vec{r}(t) = t\vec{i} + t^2\vec{j} + t^3\vec{k}$، احسب $\frac{d\vec{r}}{dt}$ و $\frac{d^2\vec{r}}{dt^2}$.
+
+ سؤال 3: إذا كان $\vec{f}(t) = \sin(t)\vec{i} + \cos(t)\vec{j} + t\vec{k}$، احسب $\int_{0}^{\pi} \vec{f}(t) \, dt$.
+
+ 4. حل الأسئلة السابقة
+
+ حل سؤال 1:
+
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} = \begin{vmatrix}
+\vec{i}  \vec{j}  \vec{k} \\
+2  3  -1 \\
+1  -2  3
+\end{vmatrix} \\
+= (9 - 2)\vec{i} - (6 + 1)\vec{j} + (-4 - 3)\vec{k} \\
+= 7\vec{i} - 7\vec{j} - 7\vec{k}
+\end{aligned}
+$$
+
+ حل سؤال 2:
+
+$$
+\begin{aligned}
+\frac{d\vec{r}}{dt} = \vec{i} + 2t\vec{j} + 3t^2\vec{k} \\
+\frac{d^2\vec{r}}{dt^2} = 2\vec{j} + 6t\vec{k}
+\end{aligned}
+$$
+
+ حل سؤال 3:
+
+$$
+\begin{aligned}
+\int_{0}^{\pi} \vec{f}(t) \, dt = \int_{0}^{\pi} \sin(t)\vec{i} + \cos(t)\vec{j} + t\vec{k} \, dt \\
+= \left[ -\cos(t)\vec{i} + \sin(t)\vec{j} + \frac{t^2}{2}\vec{k} \right]_{0}^{\pi} \\
+= -\vec{i} + \frac{\pi^2}{2}\vec{k}
+\end{aligned}
+$$
+
+أرجو أن يكون الشرح مفيدًا وموضحًا بشكل جيد. إذا كان هناك أي استفسار أو حاجة إلى مزيد من التوضيح، يرجى عدم التردد في السؤال.

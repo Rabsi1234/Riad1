@@ -1,0 +1,63 @@
+أنا هنا لشرح الصفحة 110 من درس المتجهات في الفضاء لمنهاج التوجيهي العلمي الأردني (جيل 2006/2007) بطريقة دقيقة ومفصلة.
+
+ 1. القوانين بـ LaTeX
+
+ القاعدة الأولى: قانون التوزيع
+
+$$\vec{a}(\vec{b} + \vec{c}) = \vec{a}\vec{b} + \vec{a}\vec{c}$$
+
+ القاعدة الثانية: قانون التبادل
+
+$$\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}$$
+
+ القاعدة الثالثة: قانون التكامل
+
+$$\int_{a}^{b} \vec{f}(t) dt = \left[ \int_{a}^{b} f_1(t) dt, \int_{a}^{b} f_2(t) dt, \int_{a}^{b} f_3(t) dt \right]$$
+
+ 2. حل الأمثلة
+
+ مثال 1
+
+إذا كان $\vec{a} = (1, 2, 3)$ و $\vec{b} = (4, 5, 6)$، احسب $\vec{a} \times \vec{b}$.
+
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} =
+\begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+1  2  3 \\
+4  5  6
+\end{vmatrix} \\
+= \hat{i}(12 - 15) - \hat{j}(6 - 12) + \hat{k}(5 - 8) \\
+= \hat{i}(-3) - \hat{j}(-6) + \hat{k}(-3) \\
+= (-3, 6, -3)
+\end{aligned}
+$$
+
+ مثال 2
+
+إذا كان $\vec{r}(t) = (t^2, t, t^3)$، احسب $\int_{0}^{1} \vec{r}(t) dt$.
+
+$$
+\begin{aligned}
+\int_{0}^{1} \vec{r}(t) dt = \left[ \int_{0}^{1} t^2 dt, \int_{0}^{1} t dt, \int_{0}^{1} t^3 dt \right] \\
+= \left[ \frac{t^3}{3} \right]_{0}^{1}, \left[ \frac{t^2}{2} \right]_{0}^{1}, \left[ \frac{t^4}{4} \right]_{0}^{1} \\
+= \left[ \frac{1}{3}, \frac{1}{2}, \frac{1}{4} \right]
+\end{aligned}
+$$
+
+ 3. أسئلة قدرات عليا
+
+ سؤال 1
+
+إذا كان $\vec{a} = (1, 2, 3)$ و $\vec{b} = (4, 5, 6)$، احسب $(\vec{a} \times \vec{b}) \cdot (\vec{a} + \vec{b})$.
+
+ سؤال 2
+
+إذا كان $\vec{r}(t) = (t^2, t, t^3)$، احسب $\int_{0}^{1} \vec{r}(t) \cdot \vec{r}(t) dt$.
+
+ سؤال 3
+
+إذا كان $\vec{a} = (1, 2, 3)$ و $\vec{b} = (4, 5, 6)$، احسب $(\vec{a} \times \vec{b}) \times (\vec{a} + \vec{b})$.
+
+هذه الأسئلة تتطلب تطبيق القوانين الرياضية بشكل دقيق ومتقدم، وتعتبر مناسبة لمستوى وزاري متميز.

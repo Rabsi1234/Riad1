@@ -1,0 +1,64 @@
+لن أستطيع الوصول إلى محتوى الصفحة 120 من درس المتجهات في الفضاء لمنهاج التوجيهي العلمي الأردني (جيل 2006/2007) مباشرةً. ومع ذلك، يمكنني تقديم شرح عام حول المتجهات في الفضاء والقوانين المتعلقة بها، مع استخدام LaTeX لتمثيل المعادلات الرياضية. سأقدم أيضًا أمثلة على حل المسائل المتعلقة بالمتجهات، وآليًا سأضيف ثلاثة أسئلة قدرات عليا بمستوى وزاري متميز في نهاية الشرح.
+
+ 1. شرح القوانين
+
+ المتجهات
+
+المتجهات في الفضاء ثلاثي الأبعاد يمكن تمثيلها باستخدام الإحداثيات $(x, y, z)$. يمكن كتابة متجه $\vec{A}$ في الشكل $\vec{A} = \langle x, y, z \rangle$ أو $\vec{A} = x\hat{i} + y\hat{j} + z\hat{k}$، حيث $\hat{i}$، $\hat{j}$، و$\hat{k}$ هي متجهات الوحدة في اتجاهات المحاور $x$، $y$، و$z$ على التوالي.
+
+ عمليات المتجهات
+
+- **الجمع**: $\vec{A} + \vec{B} = \langle x_A + x_B, y_A + y_B, z_A + z_B \rangle$
+- **الطرح**: $\vec{A} - \vec{B} = \langle x_A - x_B, y_A - y_B, z_A - z_B \rangle$
+- **الضرب بالسار**: $c\vec{A} = \langle cx_A, cy_A, cz_A \rangle$
+
+ الضرب الداخلي (النقطة)
+
+$\vec{A} \cdot \vec{B} = x_Ax_B + y_Ay_B + z_Az_B$
+
+ الضرب الخارجي (الزوج)
+
+$\vec{A} \times \vec{B} = \begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+x_A  y_A  z_A \\
+x_B  y_B  z_B \\
+\end{vmatrix}$
+
+ 2. حل الأمثلة
+
+ مثال 1: إيجابيات المتجهات
+
+إذا كان $\vec{A} = \langle 2, 3, 4 \rangle$ و$\vec{B} = \langle 1, -2, 1 \rangle$، احسب $\vec{A} + \vec{B}$ و$\vec{A} \cdot \vec{B}$.
+
+**الحل**:
+
+- $\vec{A} + \vec{B} = \langle 2 + 1, 3 - 2, 4 + 1 \rangle = \langle 3, 1, 5 \rangle$
+- $\vec{A} \cdot \vec{B} = (2)(1) + (3)(-2) + (4)(1) = 2 - 6 + 4 = 0$
+
+ مثال 2: ضرب المتجهات
+
+إذا كان $\vec{A} = \langle 1, 0, 0 \rangle$ و$\vec{B} = \langle 0, 1, 0 \rangle$، احسب $\vec{A} \times \vec{B}$.
+
+**الحل**:
+
+$\vec{A} \times \vec{B} = \begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+1  0  0 \\
+0  1  0 \\
+\end{vmatrix} = (0 - 0)\hat{i} - (0 - 0)\hat{j} + (1 - 0)\hat{k} = \langle 0, 0, 1 \rangle$
+
+ 3. أسئلة قدرات عليا
+
+ سؤال 1
+
+إذا كان $\vec{A} = \langle 2t, t^2, 1 \rangle$ و$\vec{B} = \langle \sin(t), \cos(t), t \rangle$، احسب $\frac{d}{dt}(\vec{A} \cdot \vec{B})$.
+
+ سؤال 2
+
+إذا كان $\vec{r}(t) = \langle \cos(t), \sin(t), t \rangle$، احسب $\vec{r}(t) \times \vec{r}(t)$.
+
+ سؤال 3
+
+إذا كان $\vec{F}(x, y, z) = \langle x, y, z \rangle$، احسب $\iiint_{V} \vec{F} \cdot d\vec{V}$ على المنطقة $V$ حيث $0 \leq x \leq 1$, $0 \leq y \leq 1$, $0 \leq z \leq 1$.
+
+تعد هذه الأسئلة تحديًا لتقويم فهمك العميق للمتجهات والعمليات عليها، بالإضافة إلى التكاملات المتقدمة.

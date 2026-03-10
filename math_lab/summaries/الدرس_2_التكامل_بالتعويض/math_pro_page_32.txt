@@ -1,0 +1,91 @@
+أنا هنا لشرح الصفحة 32 من درس التكامل بالتعويض لمنهاج التوجيهي العلمي الأردني (جيل 2006/2007) بطريقة دقيقة ومفصلة.
+
+ 1. شرح القوانين بـ LaTeX
+
+ التكامل بالتعويض
+
+التكامل بالتعويض هو تقنية تستخدم لحل التكاملات التي لا يمكن حلها بسهولة باستخدام الطرق التقليدية. يتم ذلك عن طريق تعويض متغير جديد في التكامل الأصلي، مما يسهل عملية التكامل.
+
+$$\int f(x) dx = \int f(g(u)) \cdot g(u) du$$
+
+حيث $x = g(u)$ و $dx = g(u) du$.
+
+ تطبيقات التكامل بالتعويض
+
+التكامل بالتعويض يمكن تطبيقه على مجموعة واسعة من التكاملات، بما في ذلك التكاملات التي تحتوي على دالات مثلثية، أسية، لوغاريتمية، وغيرها.
+
+ 2. حل الأمثلة
+
+ مثال 1
+
+$$\int \sin(2x) dx$$
+
+نستخدم التعويض بالشكل التالي:
+
+$$u = 2x \Rightarrow du = 2 dx \Rightarrow dx = \frac{1}{2} du$$
+
+$$\int \sin(2x) dx = \int \sin(u) \cdot \frac{1}{2} du = \frac{1}{2} \int \sin(u) du$$
+
+$$= \frac{1}{2} (-\cos(u)) + C = -\frac{1}{2} \cos(2x) + C$$
+
+ مثال 2
+
+$$\int x \sin(x^2) dx$$
+
+نستخدم التعويض بالشكل التالي:
+
+$$u = x^2 \Rightarrow du = 2x dx \Rightarrow x dx = \frac{1}{2} du$$
+
+$$\int x \sin(x^2) dx = \int \sin(u) \cdot \frac{1}{2} du = \frac{1}{2} \int \sin(u) du$$
+
+$$= \frac{1}{2} (-\cos(u)) + C = -\frac{1}{2} \cos(x^2) + C$$
+
+ 3. أسئلة قدرات عليا
+
+ سؤال 1
+
+$$\int \frac{x}{\sqrt{1+x^2}} dx$$
+
+ سؤال 2
+
+$$\int \sin^2(x) dx$$
+
+ سؤال 3
+
+$$\int \frac{1}{x \sqrt{1 + \frac{1}{x^2}}} dx$$
+
+ حل الأسئلة
+
+ سؤال 1
+
+نستخدم التعويض بالشكل التالي:
+
+$$u = 1 + x^2 \Rightarrow du = 2x dx \Rightarrow x dx = \frac{1}{2} du$$
+
+$$\int \frac{x}{\sqrt{1+x^2}} dx = \int \frac{1}{\sqrt{u}} \cdot \frac{1}{2} du = \frac{1}{2} \int u^{-\frac{1}{2}} du$$
+
+$$= \frac{1}{2} \cdot \frac{u^{\frac{1}{2}}}{\frac{1}{2}} + C = \sqrt{u} + C = \sqrt{1 + x^2} + C$$
+
+ سؤال 2
+
+نستخدم الهوية التالية:
+
+$$\sin^2(x) = \frac{1 - \cos(2x)}{2}$$
+
+$$\int \sin^2(x) dx = \int \frac{1 - \cos(2x)}{2} dx = \frac{1}{2} \int 1 - \cos(2x) dx$$
+
+$$= \frac{1}{2} \left( x - \frac{1}{2} \sin(2x) \right) + C$$
+
+ سؤال 3
+
+نستخدم التعويض بالشكل التالي:
+
+$$u = \frac{1}{x} \Rightarrow du = -\frac{1}{x^2} dx \Rightarrow dx = -\frac{1}{u^2} du$$
+
+$$\int \frac{1}{x \sqrt{1 + \frac{1}{x^2}}} dx = \int \frac{1}{\frac{1}{u} \sqrt{1 + u^2}} \cdot -\frac{1}{u^2} du$$
+
+$$= -\int \frac{1}{\sqrt{1 + u^2}} du = -\ln(u + \sqrt{1 + u^2}) + C$$
+
+$$= -\ln\left(\frac{1}{x} + \sqrt{1 + \frac{1}{x^2}}\right) + C$$
+
+هذه هي الحلول للأسئلة الثلاث. أتمنى أن تكون هذه الإجابات مفيدة.

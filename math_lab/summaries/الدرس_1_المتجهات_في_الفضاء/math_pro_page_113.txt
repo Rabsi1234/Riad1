@@ -1,0 +1,64 @@
+أنا هنا لشرح الصفحة 113 من درس المتجهات في الفضاء لمنهاج التوجيهي العلمي الأردني (جيل 2006/2007) بشكل دقيق ومفصل.
+
+ 1. القوانين بـ LaTeX
+
+ القاعدة الأولى: قانون التوزيع
+
+$$\vec{a}(\vec{b} + \vec{c}) = \vec{a}\vec{b} + \vec{a}\vec{c}$$
+
+ القاعدة الثانية: قانون التبادل
+
+$$\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}$$
+
+ القاعدة الثالثة: قانون التكامل
+
+$$\int_{a}^{b} \vec{f}(t) dt = \vec{F}(b) - \vec{F}(a)$$
+
+حيث $\vec{F}(t)$ هي الدالة المتجهة التي تمثل التكامل غير المحدد ل $\vec{f}(t)$.
+
+ 2. حل الأمثلة
+
+ مثال 1
+
+إذا كان $\vec{a} = 2\hat{i} + 3\hat{j} - \hat{k}$ و $\vec{b} = \hat{i} - 2\hat{j} + \hat{k}$، احسب $\vec{a} \times \vec{b}$.
+
+ حل
+
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} =
+\begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+2  3  -1 \\
+1  -2  1 \\
+\end{vmatrix} \\
+= \hat{i}(3 + 2) - \hat{j}(2 + 1) + \hat{k}(-4 - 3) \\
+= 5\hat{i} - 3\hat{j} - 7\hat{k} \\
+\end{aligned}
+$$
+
+ مثال 2
+
+إذا كان $\vec{r}(t) = t\hat{i} + t^2\hat{j} + t^3\hat{k}$، احسب $\frac{d\vec{r}}{dt}$.
+
+ حل
+
+$$
+\frac{d\vec{r}}{dt} = \hat{i} + 2t\hat{j} + 3t^2\hat{k}
+$$
+
+ 3. أسئلة قدرات عليا
+
+ سؤال 1
+
+إذا كان $\vec{a} = 3\hat{i} + 2\hat{j} - \hat{k}$ و $\vec{b} = \hat{i} - \hat{j} + 2\hat{k}$، احسب $(\vec{a} \times \vec{b}) \cdot (\vec{a} + \vec{b})$.
+
+ سؤال 2
+
+إذا كان $\vec{r}(t) = \sin(t)\hat{i} + \cos(t)\hat{j} + t\hat{k}$، احسب $\int_{0}^{\pi} \vec{r}(t) dt$.
+
+ سؤال 3
+
+إذا كان $\vec{f}(t) = t\hat{i} + t^2\hat{j} + t^3\hat{k}$، احسب $\int_{0}^{1} \vec{f}(t) \times \vec{f}(t) dt$.
+
+تعد هذه الأسئلة تحدياً للطالب لاختبار فهمه العميق للقوانين والعمليات المتجهة، وتتطلب تطبيقاً دقيقاً للقوانين والصيغ الرياضية.

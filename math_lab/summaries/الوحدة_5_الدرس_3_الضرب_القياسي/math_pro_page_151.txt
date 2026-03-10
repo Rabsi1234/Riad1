@@ -1,0 +1,109 @@
+الوحدة 5: Lesson 3 - الضرب القياسي
+
+ 1. القواعد الرياضية بـ LaTeX
+
+الضرب القياسي هو عملية رياضية تستخدم في الفضاء ثلاثي الأبعاد، وتعرف على أنها حاصل ضرب متجهين. يمكن تمثيله رياضياً باستخدام LaTeX كما يلي:
+
+$$
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+a_1  a_2  a_3 \\
+b_1  b_2  b_3 \\
+\end{vmatrix}
+$$
+
+حيث $\mathbf{a} = (a_1, a_2, a_3)$ و $\mathbf{b} = (b_1, b_2, b_3)$.
+
+ 2. حل الأمثلة
+
+ مثال 1:
+إذا كان $\mathbf{a} = (2, 3, 1)$ و $\mathbf{b} = (1, -2, 4)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+2  3  1 \\
+1  -2  4 \\
+\end{vmatrix} \\
+= \mathbf{i}(3 \cdot 4 - 1 \cdot (-2)) - \mathbf{j}(2 \cdot 4 - 1 \cdot 1) + \mathbf{k}(2 \cdot (-2) - 3 \cdot 1) \\
+= \mathbf{i}(12 + 2) - \mathbf{j}(8 - 1) + \mathbf{k}(-4 - 3) \\
+= 14\mathbf{i} - 7\mathbf{j} - 7\mathbf{k} \\
+= (14, -7, -7)
+\end{align*}
+$$
+
+لماذا فعلنا ذلك؟ لأننا استخدمنا قاعدة الضرب القياسي لتحديد المكونات كل على حدة.
+
+ 3. خطوات الحل
+
+1. **تحديد المكونات**: حدد مكونات المتجهين $\mathbf{a}$ و $\mathbf{b}$.
+2. **تطبيق قاعدة الضرب القياسي**: استخدم قاعدة الضرب القياسي لتحديد المكونات كل على حدة.
+3. **تجميع النتائج**: جمّع المكونات لتحصل على المتجه الناتج.
+
+ 4. أسئلة قدرات عليا (نمط وزاري)
+
+ سؤال 1:
+إذا كان $\mathbf{a} = (1, 2, 3)$ و $\mathbf{b} = (4, 5, 6)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+1  2  3 \\
+4  5  6 \\
+\end{vmatrix} \\
+= \mathbf{i}(2 \cdot 6 - 3 \cdot 5) - \mathbf{j}(1 \cdot 6 - 3 \cdot 4) + \mathbf{k}(1 \cdot 5 - 2 \cdot 4) \\
+= \mathbf{i}(12 - 15) - \mathbf{j}(6 - 12) + \mathbf{k}(5 - 8) \\
+= -3\mathbf{i} + 6\mathbf{j} - 3\mathbf{k} \\
+= (-3, 6, -3)
+\end{align*}
+$$
+
+ سؤال 2:
+إذا كان $\mathbf{a} = (2, 1, 4)$ و $\mathbf{b} = (3, 2, 1)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+2  1  4 \\
+3  2  1 \\
+\end{vmatrix} \\
+= \mathbf{i}(1 \cdot 1 - 4 \cdot 2) - \mathbf{j}(2 \cdot 1 - 4 \cdot 3) + \mathbf{k}(2 \cdot 2 - 1 \cdot 3) \\
+= \mathbf{i}(1 - 8) - \mathbf{j}(2 - 12) + \mathbf{k}(4 - 3) \\
+= -7\mathbf{i} + 10\mathbf{j} + \mathbf{k} \\
+= (-7, 10, 1)
+\end{align*}
+$$
+
+ سؤال 3:
+إذا كان $\mathbf{a} = (1, 1, 1)$ و $\mathbf{b} = (2, 2, 2)$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+1  1  1 \\
+2  2  2 \\
+\end{vmatrix} \\
+= \mathbf{i}(1 \cdot 2 - 1 \cdot 2) - \mathbf{j}(1 \cdot 2 - 1 \cdot 2) + \mathbf{k}(1 \cdot 2 - 1 \cdot 2) \\
+= \mathbf{i}(2 - 2) - \mathbf{j}(2 - 2) + \mathbf{k}(2 - 2) \\
+= 0\mathbf{i} - 0\mathbf{j} + 0\mathbf{k} \\
+= (0, 0, 0)
+\end{align*}
+$$
+
+ 5. نصيحة ذهبية
+
+تجنب الأخطاء الشائعة في هذا الدرس عن طريق:
+
+*   التأكد من تطبيق قاعدة الضرب القياسي بشكل صحيح.
+*   التحقق من المكونات كل على حدة.
+*   التأكد من جمع النتائج بشكل صحيح.
+
+بإتباع هذه النصائح، يمكنك تجنب الأخطاء الشائعة وتحقيق نتائج دقيقة في حل المسائل المتعلقة بالضرب القياسي.

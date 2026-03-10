@@ -1,0 +1,98 @@
+الوحدة 5: Lesson 3 - الضرب القياسي
+
+ 1. القواعد الرياضية بـ LaTeX
+
+الضرب القياسي هو عملية رياضية تستخدم في الفضاء ثلاثي الأبعاد، وتعرف بأنها عملية ضرب بين متجهين، وتعطي نتيجة متجهة. يمكن تمثيلها رياضياً باستخدام LaTeX كالتالي:
+
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} = \begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+a_1  a_2  a_3 \\
+b_1  b_2  b_3 \\
+\end{vmatrix} \\
+= (a_2b_3 - a_3b_2)\hat{i} - (a_1b_3 - a_3b_1)\hat{j} + (a_1b_2 - a_2b_1)\hat{k}
+\end{aligned}
+$$
+
+حيث $\vec{a} = a_1\hat{i} + a_2\hat{j} + a_3\hat{k}$ و $\vec{b} = b_1\hat{i} + b_2\hat{j} + b_3\hat{k}$.
+
+ 2. حل الأمثلة
+
+ مثال 1:
+إذا كان $\vec{a} = 2\hat{i} + 3\hat{j} - \hat{k}$ و $\vec{b} = \hat{i} - 2\hat{j} + \hat{k}$، احسب $\vec{a} \times \vec{b}$.
+
+ حل:
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} = \begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+2  3  -1 \\
+1  -2  1 \\
+\end{vmatrix} \\
+= (3 \cdot 1 - (-1) \cdot (-2))\hat{i} - (2 \cdot 1 - (-1) \cdot 1)\hat{j} + (2 \cdot (-2) - 3 \cdot 1)\hat{k} \\
+= (3 - 2)\hat{i} - (2 + 1)\hat{j} + (-4 - 3)\hat{k} \\
+= \hat{i} - 3\hat{j} - 7\hat{k}
+\end{aligned}
+$$
+
+لماذا فعلنا ذلك؟ لأننا استخدمنا قاعدة الضرب القياسي لتحديد المكونات كل على حدة.
+
+ 3. خطوات الحل
+
+1. **تحديد المكونات**: حدد مكونات المتجهين $\vec{a}$ و $\vec{b}$.
+2. **تطبيق قاعدة الضرب القياسي**: استخدم قاعدة الضرب القياسي لتحديد المكونات كل على حدة.
+3. **تجميع النتائج**: جمّع المكونات لتحصل على المتجه الناتج.
+
+ 4. أسئلة قدرات عليا (نمط وزاري)
+
+1. **سؤال 1**: إذا كان $\vec{a} = 3\hat{i} + 2\hat{j} - \hat{k}$ و $\vec{b} = 2\hat{i} - \hat{j} + 2\hat{k}$، احسب $\vec{a} \times \vec{b}$.
+2. **سؤال 2**: إذا كان $\vec{a} = \hat{i} + 2\hat{j} + 3\hat{k}$ و $\vec{b} = 3\hat{i} - \hat{j} - 2\hat{k}$، احسب $\vec{a} \times \vec{b}$.
+3. **سؤال 3**: إذا كان $\vec{a} = 2\hat{i} - \hat{j} + \hat{k}$ و $\vec{b} = \hat{i} + 2\hat{j} - 2\hat{k}$، احسب $\vec{a} \times \vec{b}$.
+
+ حلول الأسئلة:
+1. **سؤال 1**:
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} = \begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+3  2  -1 \\
+2  -1  2 \\
+\end{vmatrix} \\
+= (2 \cdot 2 - (-1) \cdot (-1))\hat{i} - (3 \cdot 2 - (-1) \cdot 2)\hat{j} + (3 \cdot (-1) - 2 \cdot 2)\hat{k} \\
+= (4 - 1)\hat{i} - (6 + 2)\hat{j} + (-3 - 4)\hat{k} \\
+= 3\hat{i} - 8\hat{j} - 7\hat{k}
+\end{aligned}
+$$
+
+2. **سؤال 2**:
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} = \begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+1  2  3 \\
+3  -1  -2 \\
+\end{vmatrix} \\
+= (2 \cdot (-2) - 3 \cdot (-1))\hat{i} - (1 \cdot (-2) - 3 \cdot 3)\hat{j} + (1 \cdot (-1) - 2 \cdot 3)\hat{k} \\
+= (-4 + 3)\hat{i} - (-2 - 9)\hat{j} + (-1 - 6)\hat{k} \\
+= -\hat{i} + 11\hat{j} - 7\hat{k}
+\end{aligned}
+$$
+
+3. **سؤال 3**:
+$$
+\begin{aligned}
+\vec{a} \times \vec{b} = \begin{vmatrix}
+\hat{i}  \hat{j}  \hat{k} \\
+2  -1  1 \\
+1  2  -2 \\
+\end{vmatrix} \\
+= ((-1) \cdot (-2) - 1 \cdot 2)\hat{i} - (2 \cdot (-2) - 1 \cdot 1)\hat{j} + (2 \cdot 2 - (-1) \cdot 1)\hat{k} \\
+= (2 - 2)\hat{i} - (-4 - 1)\hat{j} + (4 + 1)\hat{k} \\
+= 0\hat{i} + 5\hat{j} + 5\hat{k}
+\end{aligned}
+$$
+
+ 5. نصيحة ذهبية
+
+تجنب الأخطاء الشائعة في هذا الدرس عن طريق التأكد من تطبيق قاعدة الضرب القياسي بشكل صحيح، ومراجعة المكونات كل على حدة. استخدم جداول الضرب القياسي لضمان الدقة في الحسابات.

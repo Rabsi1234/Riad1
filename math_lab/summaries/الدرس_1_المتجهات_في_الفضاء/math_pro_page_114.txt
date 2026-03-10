@@ -1,0 +1,61 @@
+أنا هنا لشرح الصفحة 114 من درس المتجهات في الفضاء لمنهاج التوجيهي العلمي الأردني (جيل 2006/2007). سأقدم شرحًا دقيقًا ومفصلاً باستخدام المصطلحات العلمية الصحيحة.
+
+ 1. القوانين بـ LaTeX
+
+ القاعدة الأولى: قاعدة التوزيع
+
+$$\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}$$
+
+ القاعدة الثانية: قاعدة التكامل
+
+$$\int_{a}^{b} \vec{f}(t) \, dt = \vec{F}(b) - \vec{F}(a)$$
+
+حيث $\vec{F}(t)$ هي الدالة المتجهة التي تُي الشرط $\vec{F}(t) = \vec{f}(t)$.
+
+ القاعدة الثالثة: قاعدة التوزيع للتفاضل
+
+$$\frac{d}{dt} (\vec{a} \cdot \vec{b}) = \vec{a} \cdot \frac{d\vec{b}}{dt} + \frac{d\vec{a}}{dt} \cdot \vec{b}$$
+
+ 2. حل الأمثلة
+
+ مثال 1
+
+إذا كان $\vec{a} = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}$ و $\vec{b} = \begin{pmatrix} 4 \\ 5 \\ 6 \end{pmatrix}$، احسب $\vec{a} \cdot \vec{b}$.
+
+$$\vec{a} \cdot \vec{b} = (1)(4) + (2)(5) + (3)(6) = 4 + 10 + 18 = 32$$
+
+ مثال 2
+
+إذا كان $\vec{r}(t) = \begin{pmatrix} t \\ t^2 \\ t^3 \end{pmatrix}$، احسب $\frac{d\vec{r}}{dt}$.
+
+$$\frac{d\vec{r}}{dt} = \begin{pmatrix} 1 \\ 2t \\ 3t^2 \end{pmatrix}$$
+
+ 3. أسئلة قدرات عليا
+
+ سؤال 1
+
+إذا كان $\vec{f}(t) = \begin{pmatrix} \sin t \\ \cos t \\ t \end{pmatrix}$، احسب $\int_{0}^{\pi} \vec{f}(t) \, dt$.
+
+ سؤال 2
+
+إذا كان $\vec{a} = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}$ و $\vec{b} = \begin{pmatrix} 4 \\ 5 \\ 6 \end{pmatrix}$، احسب $(\vec{a} \times \vec{b}) \cdot \vec{a}$.
+
+ سؤال 3
+
+إذا كان $\vec{r}(t) = \begin{pmatrix} t \\ t^2 \\ t^3 \end{pmatrix}$، احسب $\frac{d^2\vec{r}}{dt^2}$.
+
+ حل الأسئلة
+
+ سؤال 1
+
+$$\int_{0}^{\pi} \vec{f}(t) \, dt = \begin{pmatrix} \int_{0}^{\pi} \sin t \, dt \\ \int_{0}^{\pi} \cos t \, dt \\ \int_{0}^{\pi} t \, dt \end{pmatrix} = \begin{pmatrix} 2 \\ 0 \\ \frac{\pi^2}{2} \end{pmatrix}$$
+
+ سؤال 2
+
+$$(\vec{a} \times \vec{b}) \cdot \vec{a} = \begin{pmatrix} (2)(6) - (3)(5) \\ (3)(4) - (1)(6) \\ (1)(5) - (2)(4) \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} = \begin{pmatrix} 12 - 15 \\ 12 - 6 \\ 5 - 8 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} = \begin{pmatrix} -3 \\ 6 \\ -3 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} = (-3)(1) + (6)(2) + (-3)(3) = -3 + 12 - 9 = 0$$
+
+ سؤال 3
+
+$$\frac{d^2\vec{r}}{dt^2} = \frac{d}{dt} \begin{pmatrix} 1 \\ 2t \\ 3t^2 \end{pmatrix} = \begin{pmatrix} 0 \\ 2 \\ 6t \end{pmatrix}$$
+
+أرجو أن يكون الشرح مفيدًا وموضحًا. إذا كان لديك أي أسئلة أو تحتاج إلى مزيد من التوضيح، فلا تتردد في السؤال.

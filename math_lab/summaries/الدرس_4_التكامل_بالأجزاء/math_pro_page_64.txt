@@ -1,0 +1,129 @@
+أنا هنا لشرح الصفحة 64 من درس التكامل بالأجزاء لمنهاج التوجيهي العلمي الأردني (جيل 2006/2007) بطريقة دقيقة ومفصلة.
+
+ 1. شرح القوانين بـ LaTeX
+
+ التكامل بالاجزاء
+
+التكامل بالاجزاء هو تقنية تستخدم لحل التكاملات التي لا يمكن حلها بسهولة باستخدام طرق التكامل الأخرى. يمكن تمثيلها بالشكل التالي:
+
+$$
+\int u \, dv = uv - \int v \, du
+$$
+
+حيث $u$ و $v$ هما دالتان، و $du$ و $dv$ هما المشتقات الجزئية لهما.
+
+ تطبيق التكامل بالاجزاء
+
+لنفترض أننا نريد حل التكامل التالي:
+
+$$
+\int x \sin x \, dx
+$$
+
+نستخدم التكامل بالاجزاء بحيث $u = x$ و $dv = \sin x \, dx$.  $du = dx$ و $v = -\cos x$.
+
+$$
+\begin{aligned}
+\int x \sin x \, dx = x(-\cos x) - \int (-\cos x) \, dx \\
+= -x\cos x + \int \cos x \, dx \\
+= -x\cos x + \sin x + C
+\end{aligned}
+$$
+
+ 2. حل الأمثلة
+
+ مثال 1
+
+$$
+\int x^2 \sin x \, dx
+$$
+
+نستخدم التكامل بالاجزاء بحيث $u = x^2$ و $dv = \sin x \, dx$. ثم $du = 2x \, dx$ و $v = -\cos x$.
+
+$$
+\begin{aligned}
+\int x^2 \sin x \, dx = x^2(-\cos x) - \int (-\cos x)2x \, dx \\
+= -x^2\cos x + 2\int x\cos x \, dx
+\end{aligned}
+$$
+
+للحصول على $\int x\cos x \, dx$، نستخدم التكامل بالاجزاء مرة أخرى بحيث $u = x$ و $dv = \cos x \, dx$. ثم $du = dx$ و $v = \sin x$.
+
+$$
+\begin{aligned}
+\int x\cos x \, dx = x\sin x - \int \sin x \, dx \\
+= x\sin x + \cos x + C
+\end{aligned}
+$$
+
+بالتالي,
+
+$$
+\begin{aligned}
+\int x^2 \sin x \, dx = -x^2\cos x + 2(x\sin x + \cos x) + C \\
+= -x^2\cos x + 2x\sin x + 2\cos x + C
+\end{aligned}
+$$
+
+ مثال 2
+
+$$
+\int e^x \sin x \, dx
+$$
+
+نستخدم التكامل بالاجزاء بحيث $u = e^x$ و $dv = \sin x \, dx$. ثم $du = e^x \, dx$ و $v = -\cos x$.
+
+$$
+\begin{aligned}
+\int e^x \sin x \, dx = e^x(-\cos x) - \int (-\cos x)e^x \, dx \\
+= -e^x\cos x + \int e^x\cos x \, dx
+\end{aligned}
+$$
+
+للحصول على $\int e^x\cos x \, dx$، نستخدم التكامل بالاجزاء مرة أخرى بحيث $u = e^x$ و $dv = \cos x \, dx$. ثم $du = e^x \, dx$ و $v = \sin x$.
+
+$$
+\begin{aligned}
+\int e^x\cos x \, dx = e^x\sin x - \int \sin x \cdot e^x \, dx
+\end{aligned}
+$$
+
+نلاحظ أننا عادنا إلى التكامل الأصلي. يمكننا كتابة المعادلة على شكل:
+
+$$
+\begin{aligned}
+\int e^x \sin x \, dx = -e^x\cos x + e^x\sin x - \int e^x \sin x \, dx
+\end{aligned}
+$$
+
+إضافة $\int e^x \sin x \, dx$ إلى كلا الجانبين:
+
+$$
+\begin{aligned}
+2\int e^x \sin x \, dx = -e^x\cos x + e^x\sin x \\
+\int e^x \sin x \, dx = \frac{1}{2}(-e^x\cos x + e^x\sin x) + C \\
+= \frac{e^x}{2}(\sin x - \cos x) + C
+\end{aligned}
+$$
+
+ 3. أسئلة قدرات عليا
+
+ سؤال 1
+
+$$
+\int x^3 \sin x \, dx
+$$
+
+ سؤال 2
+
+$$
+\int e^{2x} \cos x \, dx
+$$
+
+ سؤال 3
+
+$$
+\int x^2 \sin 2x \, dx
+$$
+
+هذه الأسئلة تتطلب تطبيق التكامل بالاجزاء بشكل متقدم، ويمكن حلها باستخدام نفس التقنيات المشرحة أعلاه.

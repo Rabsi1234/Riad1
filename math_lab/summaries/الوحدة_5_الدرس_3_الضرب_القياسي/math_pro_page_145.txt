@@ -1,0 +1,99 @@
+الوحدة 5: Lesson 3 - الضرب القياسي
+
+ 1. القواعد الرياضية
+
+الضرب القياسي هو عملية رياضية تستخدم في الفضاء ثلاثي الأبعاد، وتعبر عن حاصل ضرب متجهين. يمكن تمثيله باستخدام LaTeX كما يلي:
+
+$$
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+a_1  a_2  a_3 \\
+b_1  b_2  b_3 \\
+\end{vmatrix}
+$$
+
+حيث $\mathbf{i}$، $\mathbf{j}$، و$\mathbf{k}$ هي متجهات الوحدة في الاتجاهات $x$، $y$، و$z$ على التوالي.
+
+ 2. حل الأمثلة
+
+ مثال 1:
+إذا كان $\mathbf{a} = 2\mathbf{i} + 3\mathbf{j} - \mathbf{k}$ و$\mathbf{b} = \mathbf{i} - 2\mathbf{j} + \mathbf{k}$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+2  3  -1 \\
+1  -2  1 \\
+\end{vmatrix} \\
+= \mathbf{i}(3 \cdot 1 - (-1) \cdot (-2)) - \mathbf{j}(2 \cdot 1 - (-1) \cdot 1) + \mathbf{k}(2 \cdot (-2) - 3 \cdot 1) \\
+= \mathbf{i}(3 - 2) - \mathbf{j}(2 + 1) + \mathbf{k}(-4 - 3) \\
+= \mathbf{i} - 3\mathbf{j} - 7\mathbf{k}
+\end{align*}
+$$
+
+لماذا فعلنا ذلك: لتحسب الضرب القياسي، استخدمنا مصفوفة الديترمينان أعلاه. كل عنصر في المصفوفة يُمثل مكونًا من متجهات الوحدة، ونتيجة الضرب تُحسب عن طريق توسيع المحدد.
+
+ 3. خطوات الحل
+
+1. **تحديد المتجهات**: حدد متجهات $\mathbf{a}$ و$\mathbf{b}$.
+2. **تطبيق الضرب القياسي**: استخدم مصفوفة الديترمينان لتحسب حاصل الضرب القياسي.
+3. **توسيع المحدد**: قم بتوسيع المحدد لتحصل على مكونات المتجه الناتج.
+
+ 4. أسئلة قدرات عليا (نمط وزاري)
+
+ سؤال 1:
+إذا كان $\mathbf{a} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$ و$\mathbf{b} = 2\mathbf{i} - \mathbf{j} + \mathbf{k}$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+1  2  -1 \\
+2  -1  1 \\
+\end{vmatrix} \\
+= \mathbf{i}(2 \cdot 1 - (-1) \cdot (-1)) - \mathbf{j}(1 \cdot 1 - (-1) \cdot 2) + \mathbf{k}(1 \cdot (-1) - 2 \cdot 2) \\
+= \mathbf{i}(2 - 1) - \mathbf{j}(1 + 2) + \mathbf{k}(-1 - 4) \\
+= \mathbf{i} - 3\mathbf{j} - 5\mathbf{k}
+\end{align*}
+$$
+
+ سؤال 2:
+إذا كان $\mathbf{a} = 3\mathbf{i} - \mathbf{j} + 2\mathbf{k}$ و$\mathbf{b} = \mathbf{i} + \mathbf{j} - \mathbf{k}$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+3  -1  2 \\
+1  1  -1 \\
+\end{vmatrix} \\
+= \mathbf{i}((-1) \cdot (-1) - 2 \cdot 1) - \mathbf{j}(3 \cdot (-1) - 2 \cdot 1) + \mathbf{k}(3 \cdot 1 - (-1) \cdot 1) \\
+= \mathbf{i}(1 - 2) - \mathbf{j}(-3 - 2) + \mathbf{k}(3 + 1) \\
+= -\mathbf{i} + 5\mathbf{j} + 4\mathbf{k}
+\end{align*}
+$$
+
+ سؤال 3:
+إذا كان $\mathbf{a} = 2\mathbf{i} + \mathbf{j} - 3\mathbf{k}$ و$\mathbf{b} = \mathbf{i} - 2\mathbf{j} + \mathbf{k}$، احسب $\mathbf{a} \times \mathbf{b}$.
+
+ حل:
+$$
+\begin{align*}
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i}  \mathbf{j}  \mathbf{k} \\
+2  1  -3 \\
+1  -2  1 \\
+\end{vmatrix} \\
+= \mathbf{i}(1 \cdot 1 - (-3) \cdot (-2)) - \mathbf{j}(2 \cdot 1 - (-3) \cdot 1) + \mathbf{k}(2 \cdot (-2) - 1 \cdot 1) \\
+= \mathbf{i}(1 - 6) - \mathbf{j}(2 + 3) + \mathbf{k}(-4 - 1) \\
+= -5\mathbf{i} - 5\mathbf{j} - 5\mathbf{k}
+\end{align*}
+$$
+
+ 5. نصيحة ذهبية
+
+تجنب الأخطاء الشائعة في هذا الدرس عن طريق التأكد من أنك تطبق قواعد الضرب القياسي بدقة، و عند توسيع المحدد. تأكد من أنك تتبع ترتيب العمليات بشكل صحيح، وتحسب كل مكون من مكونات المتجه الناتج بشكل منفصل.
